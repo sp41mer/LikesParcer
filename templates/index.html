@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    {% for user in users %}
+        <a href="http://vk.com/id{{ user.id }}">
+            <img src = {{ user.photo_100 }}>
+        </a>
+        <br>
+    {% endfor %}
+</body>
+</html>
